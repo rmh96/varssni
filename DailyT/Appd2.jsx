@@ -73,3 +73,8 @@ export default Appd2;
 //no remounting
 
 //createRef - Class components //remount - ref lost
+
+//useReducer - Redux
+//HOC
+//Context API
+//closure
