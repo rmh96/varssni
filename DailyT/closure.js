@@ -23,19 +23,19 @@ let name = "varssni";
 
 const outer = () => {
   let count = 0;
-  const inner = () => {
-    count++;
+  const inner = (args) => {
+    count += args;
     console.log("Name - ", count);
     return count;
   };
   return inner;
 };
 
-const adminName = outer();
-adminName();
-adminName();
-adminName();
-adminName();
+const adminName = outer("name");
+adminName(10);
+adminName(10);
+adminName(10);
+adminName(10);
 const count = adminName();
 
 // Pub sub design pattern
